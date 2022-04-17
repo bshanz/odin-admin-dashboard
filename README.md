@@ -1,2 +1,2 @@
-# odin-admin-dashboard
-The Odin Project's admin dashboard. Built with CSS Grid and Flexbox.
+# admin-dashboard
+The Odin Project - Admin Dashboard Project

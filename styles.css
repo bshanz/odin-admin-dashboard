@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+  background-color: #1b92d3;
+  color: whitesmoke;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 3fr;
+  justify-items: start;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 40px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  align-self: center;
+  margin: -3px;
+}
+
+.logo-icon {
+  font-weight: bold;
+  font-size: 40px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  align-self: center;
+  justify-self: center;
+}
+
+.menu-items {
+  display: grid;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.menu-icons {
+  display: grid;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+ul.menu-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /*justify-content: space-evenly;*/
+}
+
+ul.menu-icons-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 2.5vw;
+  /*justify-content: space-evenly;*/
+}
+
+li {
+  list-style-type: none;
+  padding-bottom: 2vh;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #ffffff;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.main-content {
+  display: grid;
+  background-color: #e2e8ef;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+.left-main-content-header {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-self: start;
+  align-self: center;
+  font-weight: bold;
+  margin-left: 9px;
+}
+
+.left-main-content {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 9px;
+  margin: 0px 9px 0px 9px;
+}
+
+.article {
+  padding-left: 10px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  border-radius: 10px;
+  border-left: 5px solid #f0b429;
+  justify-items: start;
+  align-items: end;
+  font-weight: bold;
+}
+
+p {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding-top: 15px;
+  justify-self: start;
+  align-self: start;
+  font-weight: normal;
+  text-align: left;
+}
+
+.article-icons {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  justify-self: end;
+  align-self: center;
+  font-weight: normal;
+  margin-right: 1.7vw;
+}
+
+.right-main-content-header {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-self: start;
+  align-self: center;
+  font-weight: bold;
+}
+
+/* Next step -- make 2 cards within right main content. Could be grid (like left cards) or flexbox since one dimensional*/
+
+.right-main-content {
+  background-color: red;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
