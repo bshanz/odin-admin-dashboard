@@ -24,7 +24,7 @@
   grid-template-columns: 1fr 3fr;
   justify-items: start;
   font-family: "Montserrat", sans-serif;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
 }
 
 .logo {
@@ -82,6 +82,7 @@ li {
   background-color: #ffffff;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
 }
 
 .main-content {
@@ -98,9 +99,10 @@ li {
   grid-column: 1 / 2;
   display: grid;
   justify-self: start;
-  align-self: center;
+  align-self: end;
   font-weight: bold;
   margin-left: 9px;
+  padding-bottom: 1vh;
 }
 
 .left-main-content {
@@ -123,6 +125,7 @@ li {
   justify-items: start;
   align-items: end;
   font-weight: bold;
+  box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
 }
 
 p {
@@ -133,6 +136,8 @@ p {
   align-self: start;
   font-weight: normal;
   text-align: left;
+  color: #6d6565;
+  font-size: 14px;
 }
 
 .article-icons {
@@ -149,17 +154,168 @@ p {
   grid-column: 2 / 3;
   display: grid;
   justify-self: start;
-  align-self: center;
+  align-self: end;
   font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 /* Next step -- make 2 cards within right main content. Could be grid (like left cards) or flexbox since one dimensional*/
 
 .right-main-content {
-  background-color: red;
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 4fr 1fr 4fr;
   grid-template-columns: 1fr;
 }
+
+.right-main-top-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
+  grid-row: 1 / 2;
+  grid-column: 1/2;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.container-one, .container-two, .container-three{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-bottom: 1px solid #D2D2D2;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 12px 0px 12px 0px;
+}
+
+.container-three {
+  border-bottom: 0px;
+}
+
+p.flexer{
+  padding: 0px;
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.right-main-middle-content {
+  border-radius: 10px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-self: start;
+  align-self: end;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+.right-main-bottom-content {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 15px;
+  justify-items: start;
+}
+
+.icon-one{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-two{
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-three{
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-four{
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.icon-one-content{
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  font-size: .7rem;
+  padding: 15px 0px 15px 0px;
+}
+
+.icon-one-name{
+  color: #6d6565;
+}
+
+.icon-two-content{
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  font-size: .7rem;
+  padding: 15px 0px 15px 0px;
+}
+
+.icon-two-name{
+  color: #6d6565;
+}
+
+.icon-three-content{
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  font-size: .7rem;
+  padding: 15px 0px 15px 0px;
+}
+
+.icon-three-name{
+  color: #6d6565;
+}
+
+.icon-four-content{
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  font-size: .7rem;
+  padding: 15px 0px 15px 0px;
+}
+
+.icon-four-name{
+  color: #6d6565;
+}
+
