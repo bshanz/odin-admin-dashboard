@@ -6,50 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
       rel="stylesheet"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <div class="logo">Logo</div>
-        <div class="logo-icon">L</div>
+        <div class="logo">Dashboard</div>
+        <div class="logo-icon"><i class="material-icons" style="font-size:larger;">
+            polymer
+        </i></div>
         <div class="menu-items">
-          <ul class="menu-left">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-            <li></li>
-            <li></li>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-          </ul>
+          <li>Home</li>
+          <li>Profile</li>
+          <li>Messages</li>
+          <li>History</li>
+          <li>Tasks</li>
+          <li>Communities</li>
+          <li></li>
+          <li>Settings</li>
+          <li>Support</li>
+          <li>Privacy</li>
         </div>
         <div class="menu-icons">
-          <ul class="menu-icons-center">
-            <li>H</li>
-            <li>P</li>
-            <li>M</li>
-            <li>H</li>
-            <li>T</li>
-            <li>C</li>
-            <li></li>
-            <li></li>
-            <li>S</li>
-            <li>S</li>
-            <li>P</li>
-          </ul>
+          <i class="material-icons">home</i>
+          <i class="material-icons">computer</i>
+          <i class="material-icons">message</i>
+          <i class="material-icons">history</i>
+          <i class="material-icons">task</i>
+          <i class="material-icons">people</i>
+          <i></i>
+          <i class="material-icons">settings</i>
+          <i class="material-icons">support</i>
+          <i class="material-icons">lock</i>
         </div>
       </div>
-      <div class="header"></div>
+      <div class="header">
+        <div class="header-top-left">
+          <i class="material-icons">search</i>
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="header-top-right">
+          <i class="material-icons-outlined">notifications_active</i>
+          <img
+            src="art-hauntington-0wRXAXqIp58-unsplash.jpg"
+            class="pro-pic"
+            alt=""
+          />
+          <h4 class="calix">Calix Nova</h4>
+        </div>
+        <div class="header-bottom-right">
+          <button class="button-9" role="button">New</button>
+          <button class="button-9" role="button">Upload</button>
+          <button class="button-9" role="button">Share</button>
+        </div>
+        <div class="header-bottom-left">
+          <div class="header-bottom-left-left">
+            <img
+            src="art-hauntington-0wRXAXqIp58-unsplash.jpg"
+            class="large-pro-pic"
+            alt=""
+          />
+          </div>
+          <div class="header-bottom-left-right">
+            <span>Hi there,</span>
+            <h3>Calix Nova (@Calix)</h3>
+          </div>
+        </div>
+      </div>
       <div class="main-content">
         <div class="left-main-content-header">Your Projects</div>
         <div class="left-main-content">
@@ -128,16 +160,40 @@
           </div>
           <div class="right-main-middle-content">Trending</div>
           <div class="right-main-bottom-content">
-            <div class="icon-one">H</div>
-            <div class="icon-two">H</div>
-            <div class="icon-three">H</div>
-            <div class="icon-four">H</div>
+            <div class="icon-one">
+              <img
+                src="michael-afonso-3lbxyaAoXbU-unsplash.jpg"
+                class="pro-pic"
+                alt=""
+              />
+            </div>
+            <div class="icon-two">
+              <img
+                src="midas-hofstra-tidSLv-UaNs-unsplash.jpg"
+                class="pro-pic"
+                alt=""
+              />
+            </div>
+            <div class="icon-three">
+              <img
+                src="ameer-basheer-_FRKHdiPXYs-unsplash.jpg"
+                class="pro-pic"
+                alt=""
+              />
+            </div>
+            <div class="icon-four">
+              <img
+                src="noah-buscher-11lDEHFy_hA-unsplash.jpg"
+                class="pro-pic"
+                alt=""
+              />
+            </div>
             <div class="icon-one-content">
               <div class="icon-one-handle">@tegan</div>
               <div class="icon-one-name">World Peace Builder</div>
             </div>
             <div class="icon-two-content">
-              <div class="icon-two-handle">@morgan</div>
+              <div class="icon-two-handle">@midas</div>
               <div class="icon-two-name">Super Cool Project</div>
             </div>
             <div class="icon-three-content">
