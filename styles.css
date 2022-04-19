@@ -36,6 +36,7 @@
   grid-column: 2 / 3;
   align-self: center;
   margin: -3px;
+  cursor: pointer;
 }
 
 .logo-icon {
