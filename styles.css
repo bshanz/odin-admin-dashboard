@@ -239,6 +239,7 @@ input {
   align-items: end;
   font-weight: bold;
   box-shadow: rgba(143, 96, 96, 0.2) 0px 2px 8px 0px;
+  padding: 10px;
 }
 
 p {
@@ -256,10 +257,12 @@ p {
 .article-icons {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
-  justify-self: end;
-  align-self: center;
-  font-weight: normal;
-  margin-right: 1.7vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1vw;
 }
 
 .right-main-content-header {
@@ -444,4 +447,12 @@ p.flexer {
   max-height: 7vh;
   max-width: 7vw;
   border-radius: 50%;
+}
+
+.material-icons, .material-icons-outlined {
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
 }
